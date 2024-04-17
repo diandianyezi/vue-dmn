@@ -14,7 +14,9 @@
     "core-js": "^3.8.3",
     "dmn-js": "^15.1.0",
     "dmn-js-properties-panel": "^3.2.1",
-    "vue": "^2.6.14"
+    "vue": "^2.6.14",
+    "express": "^4.19.2",
+    "http-proxy-middleware": "^3.0.0"
   },
   "devDependencies": {
     "@babel/core": "^7.12.16",
