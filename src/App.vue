@@ -8,7 +8,7 @@
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import { open as DmnEditorOpen } from '@kie-tools/kie-editors-standalone/dist/dmn';
+import { open as DmnEditorOpen } from 'DmnEditor';
 
 export default {
   name: 'App',
@@ -309,7 +309,7 @@ else
   },
   mounted() {
     console.info('DmnEditor', DmnEditorOpen);
-    console.info('dmn.Editor', window.dmn?.Editor);
+    console.info('dmn.Editor', window.DmnEditor?.Editor);
     this.dmnEditor = DmnEditorOpen({
         container: this.$refs.dmn,
         initialContent: Promise.resolve(this.dmn || ''),
